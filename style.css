@@ -1,0 +1,505 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+    height: 7vh;
+    width: 100%;
+    position: fixed;
+}
+
+.logo > p{
+    float: left;
+    font-size: 30px;
+    color: white;
+    padding: 0px 10px;
+    margin: 0px 0px 0px 50px;
+    line-height: 7vh;
+}
+
+.navbar #nav_ul{
+    float: right;
+    display: flex;
+    line-height: 7vh;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    line-height: 5vh;
+    margin: 0px 15px;
+    padding: 5px 15px;
+}
+
+.navbar #link1.active,#link2.active,#link3.active,#link4.active,#link1:hover,#link2:hover,#link3:hover,#link4:hover{
+    /* text-decoration: underline; */
+    border-radius: 15px;
+    background-color: lightskyblue;
+}
+
+.click_btn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    display: none;
+    line-height: 10vh;
+    margin-right: 35px;
+}
+
+#check{
+    display: none;
+}
+
+
+.menu-btn{
+    position: fixed;
+    display: flex;
+    /* border: 3px solid white; */
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    margin: 8px -23px;
+}
+
+.bar{
+    height: 4px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.bar::before,
+.bar::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.bar::before{
+    transform: translateY(-8px);
+}
+
+.bar::after{
+    transform: translateY(8px);
+}
+
+.menu-btn.open .bar::after{
+    transform: rotate(-45deg);
+}
+
+.menu-btn.open .bar::before{
+    transform: rotate(45deg);
+}
+
+.menu-btn.open .bar{
+    background: transparent;
+}
+
+.no-image{
+    display: none;
+}
+
+#backimage{
+    position: absolute;
+    z-index: -1;
+    opacity: .6;
+    inset: none;
+    width: 100%;
+    height: 108.5vh;
+}
+.main-container{
+    height: 50vh;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    width: auto;
+    text-align: center;
+    text-justify: auto;
+    border-bottom: 2px solid black;
+}
+
+#main-title{
+    padding: 0px 8px 0px 8px;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#main-text{
+    padding: 0px 8px 0px 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.image-container{
+    height: 58vh;
+}
+
+.image-container h2{
+    padding: 15px 8px 0px 8px;
+    text-align: center;
+}
+
+.image{
+    width: 320px;
+    height: 320px;
+    border: 3px black;
+    border-radius: 90px;
+    padding: 18px 25px 5px 25px;
+}
+
+.images{
+    text-align: center;
+}
+
+.services-part{
+    height: 140vh;
+    background-color: rgb(36, 32, 32);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#plan{
+    color: white;
+    padding: 80px 0px 0px 0px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.services-part h3{
+    color: silver;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    font-size: 24px;
+}
+
+.services-part ul{
+    list-style: none;   
+    margin: 25px 0px;
+    padding: 25px 0px;
+}
+
+.services-part li{
+    padding: 5px 0px;
+}
+
+.services-part ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-container{ 
+    background:linear-gradient(to right ,lightpink,lightgreen);
+    height: 83vh;
+    text-align: center;
+    font-size: 25px ;
+}
+
+.contact-container p{
+    text-transform: uppercase;
+    padding: 10px 5px 20px 5px;
+}
+
+.contact-container #frm{
+    font-size: 17px;
+}
+
+.contact-container #contact{
+    font-weight: bolder;
+    padding: 60px 0px 0px 0px;
+}
+
+.contact-container .contact-frm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-container .contact-frm input{
+    width: 350px;
+    margin: 15px 5px;
+    font-size: 16px;
+    padding: 15px 0px 15px 18px;
+}
+
+.contact-container .contact-frm input[type=submit]{
+    border-radius: 25px;
+}
+
+.contact-container .contact-frm input[type=submit]:hover{
+    background: linear-gradient(to left,lightpink,lightgreen);
+    cursor: pointer;
+}
+
+.contact-container .contact-frm textarea{
+    width: 350px;
+    font-size: 16px;
+    padding: 15px 0px 15px 18px;
+    margin: 15px 0px;
+}
+
+.footer-part{
+    text-align: center;
+}
+
+.footer-part #footer1{
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 5px 2px 0px 2px;
+}
+
+.footer-part #footer2{
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: blueviolet;
+    margin: 0px 0px 8px 0px;
+}
+
+.footer-part #footer_symbol,#footer3,#footer_nav{
+    font-size: 13px;
+}
+
+#footer_nav a{
+    text-decoration: none;
+    color: black ;
+    padding: 0px 2px 0px 0px;
+}
+
+.footer-part{
+    padding: 0px 0px 15px 0px;
+}
+
+
+@media (max-width:665px){
+    .click_btn{
+        display: block;
+    }
+    
+    #nav_ul{
+        position: fixed;
+        background-color: #919891;
+        width: 100%;
+        height: 100vh;
+        top: 7vh;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .navbar #nav_ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li a{
+        color: black;
+        font-size: 20px ;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .main-container{
+        height: 40vh;
+    }
+
+    #main-title{
+        font-size: 32px;
+    }
+
+    #main-text{
+        font-size: 14px;
+    }
+
+    .image-container{
+        height: 56vh;
+    }
+
+    .image-container h2{
+        font-size: 19px;
+    }
+
+    .image{
+        height: 240px;
+        width: 240px;
+    }
+
+    .services-part ul li a{
+        font-size: 11px;
+    }
+
+    .services-part #plan{
+        font-size: 20px;
+    }
+
+    .services-part ul h3{
+        font-size: 18px;
+    }
+
+    .contact-container #contcat{
+        font-size: 20px;
+    }
+
+    .contact-container #frm{
+        font-size: 13px;
+    }
+
+ .contact-container .contact-frm input{
+        width: 250px;
+        font-size: 13px;
+    }
+
+   .contact-container .contact-frm textarea{
+    width: 250px;
+    font-size: 13px;
+    }
+
+    .footer-part #footer1{
+        font-size: 23px;
+    }
+
+    .footer-part #footer2{
+        font-size: 13px;
+    }
+
+    .footer-part #footer_symbol,#footer3,#footer_nav{
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width:1650px){
+    /* first resize the width and hieght of the containers of page */
+    .navbar{
+        height: 7vh;
+    }
+
+    .main-container{
+        height: 40vh;
+    }
+
+    .image-container{
+        height: 30vh;
+    }
+
+    .services-part{
+        height: 55vh;
+    }
+
+    .contact-container{
+        height: 35vh;
+    }
+
+    .footer-part{
+        height: 10vh;
+    }
+
+    /* font work */
+    .logo > p{
+        font-size: 70px;
+        line-height: 7vh;
+    }
+
+    .navbar ul li{
+        padding: 0px 15px 0px 15px;
+    }
+
+    .navbar ul li a{
+        line-height: 7vh;
+        padding: 10px 40px 10px 40px;
+    }
+
+    #nav_ul li a{
+        font-size: 40px;
+    }
+    
+    #main-title{
+        font-size: 85px;
+    }
+    
+    #main-text{
+        font-size: 25px;
+    }
+    
+    .image-container h2{
+        font-size: 45px;
+    }
+    
+    .image{
+        width: 500px;
+        height: 500px;
+        border-radius: 150px;
+    }
+
+    .navbar #link1.active,#link2.active,#link3.active,#link4.active,#link1:hover,#link2:hover,#link3:hover,#link4:hover{
+        border-radius: 50px;
+    }
+
+#plan{
+    /* padding: 80px 0px 0px 0px; */
+    font-size: 50px;
+}
+
+.services-part h3{
+    font-size: 38px;
+}
+
+.services-part ul li a{
+    font-size: 20px;
+}
+
+.contact-container #frm{
+    font-size: 24px;
+}
+
+.contact-container #contact{
+    font-size: 37px;
+}
+
+.contact-container .contact-frm input{
+    width: 550px;
+    font-size: 35px;
+}
+
+.contact-container .contact-frm input[type=submit]{
+    border-radius: 35px;
+}
+
+.contact-container .contact-frm textarea{
+    width: 550px;
+    height: 200px;
+    font-size: 35px;
+}
+
+
+.footer-part #footer1{
+    font-size: 55px;
+}
+
+.footer-part #footer2{
+    font-size: 29px;
+}
+
+.footer-part #footer_symbol,#footer3,#footer_nav{
+    font-size: 22px;
+}
+
+
+}
+

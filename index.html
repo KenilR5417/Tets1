@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Make Your Own Home</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <input type="checkbox" name="check" id="check">
+        <label for="check" class="click_btn" id="label1">
+            <div class="menu-btn" id="menu" onclick="click_menu()">
+                <div class="bar"></div>
+            </div>
+        </label>
+        <div class="logo">
+            <p>Design</p>
+        </div>
+        <ul id="nav_ul">
+            <li> <a id="link1" class="active" href="#home_part" onclick="click_link1()"> Home </a> </li>
+            <li> <a id="link2" href="#footer_nav" onclick="click_link2()"> About us </a> </li>
+            <li> <a id="link4" href="#plan" onclick="click_link4()"> Servieces </a> </li>
+            <li> <a id="link3" href="#cof" onclick="click_link3()"> Contact us </a> </li>
+        </ul>
+    </div>
+    <div class="main-part" id="home_part">
+        <img src="inner_house.jpeg"  id="backimage" alt="">
+        <div class="main-container">
+            <h1 id="main-title">
+                Make Your Own House
+            </h1>
+            <p id="main-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus adipisci fugit nobis sint
+                commodi nihil magnam, vel blanditiis incidunt? Et officia adipisci ea nisi!
+            </p>
+        </div>
+        <div class="image-container">
+            <h2>
+                Here You can see the pictures of the house and guess the design for your own
+            </h2>
+            <div class="images">
+                <img src="Outer_home.jpg" class="image" alt="home sweet home">
+                <!-- <img src="inner_house.jpeg" alt="home sweet home" class="image"> -->
+            </div>
+        </div>
+    </div>
+    <div class="services-part" id="service_part">
+        <p id="plan"> Servieces </p>
+        <div class="text-container">
+            <ul>
+                <li>
+                    <h3>Browse plans</h3>
+                </li>
+                <li> <a href="#">Search</a> </li>
+                <li> <a href="#">signature plans</a> </li>
+                <li> <a href="#">Exclusive designers</a> </li>
+                <li> <a href="#">on sale</a> </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>What we do</h3>
+                </li>
+                <li> <a href="#">media center</a> </li>
+                <li> <a href="#">blog</a> </li>
+                <li> <a href="#">faq</a> </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>resources</h3>
+                </li>
+                <li> <a href="#">Builder advantage</a> </li>
+                <li> <a href="#">builder magzine</a> </li>
+                <li> <a href="#">Desgin home</a> </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>get it touch</h3>
+                </li>
+                <li> <a href="#">publish Houseplans</a> </li>
+                <li> <a href="#">advertise with us</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact-container">
+        <form class="contact-frm" id="cof">
+            <p id="contact">for contact us</p>
+            <p id="frm"> fill this form for contact & review this website </p>
+            <input type="text" placeholder="Enter Your Name Here" name="username" id="username" required>
+            <input type="email" name="mail" id="mail" placeholder="Enter Your Email Adress Here" required>
+            <textarea name="feedback" id="feedback" cols="30" rows="10"
+            placeholder="Kindly Give The FeedBack Of The WebSite Here"></textarea>
+            <input type="submit" value="Submit" id="submit_btn" name="submit_btn">
+        </form>
+    </div>
+    <div class="footer-part">
+        <p id="footer1"> Design</p>
+        <p id="footer2"> house plans</p>
+        <p id="footer_symbol"> &#169;2023 Design Media, </p>
+        <p id="footer3">a New Corporation </p>
+        <nav id="footer_nav">
+            <a href="#"> Privacy Policy</a>|
+            <a href="#"> Terms & Conditions</a>|
+            <a href="#"> Accessibility Statement</a>
+        </nav>
+    </div>
+</body>
+</html>
